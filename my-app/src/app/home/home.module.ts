@@ -5,6 +5,10 @@ import { DriversComponent } from './drivers/drivers.component';
 import { DocumentsComponent } from './documents/documents.component';
 
 
+{
+  path: 'home',
+  loadChildren: () => import('./home/home.module').then(mod => mod.HomeModule),
+},
 
 @NgModule({
   declarations: [HomeComponent, DriversComponent, DocumentsComponent],
