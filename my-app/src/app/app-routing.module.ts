@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './auth/home/home.component';
+import { HomeComponent } from './home/home/home.component';
 import { DriversComponent } from './home/drivers/drivers.component';
 import { DocumentsComponent } from './home/documents/documents.component';
 
@@ -15,7 +15,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
