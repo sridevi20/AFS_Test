@@ -3,19 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home//home/home.component';
+import { HomeComponent } from './home/home/home.component';
 import { DriversComponent } from './home/drivers/drivers.component';
 import { DocumentsComponent } from './home/documents/documents.component';
-import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-// import { HomeComponent } from './home//home/home.component';
+import { AuthComponent } from './auth/auth.component';
 
 
-registerLocaleData(en);
+
+
+
+
+
 
 
 @NgModule({
@@ -24,18 +22,18 @@ registerLocaleData(en);
     HomeComponent,
     DriversComponent,
     DocumentsComponent,
-    HomeComponent
+    AuthComponent
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgZorroAntdModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule
+    AppRoutingModule
+
+
+
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
