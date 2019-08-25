@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
+import { HomePageComponent } from './home-page/home-page.component';
 
 registerLocaleData(en);
 
@@ -30,7 +31,8 @@ registerLocaleData(en);
     HomeComponent,
     DriversComponent,
     DocumentsComponent,
-    AuthComponent
+    AuthComponent,
+    HomePageComponent
 
 
   ],
